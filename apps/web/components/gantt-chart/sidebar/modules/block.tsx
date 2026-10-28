@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// Plane
+// Clutch
 import { Row } from "@plane/blocks/layout";
 // components
 import { cn } from "@plane/utils";

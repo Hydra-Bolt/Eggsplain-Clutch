@@ -14,7 +14,7 @@ export { BlockerIcon } from "./blocker-icon";
 export { AccentureLogo } from "./brand/accenture-logo";
 export { DolbyLogo } from "./brand/dolby-logo";
 export { PlaneLockup } from "./brand/plane-lockup";
-export { PlaneLogo } from "./brand/plane-logo";
+export { ClutchLogo, PlaneLogo } from "./brand/clutch-logo";
 export { SonyLogo } from "./brand/sony-logo";
 export { ZerodhaLogo } from "./brand/zerodha-logo";
 export { CalendarAfterIcon } from "./calendar-after-icon";

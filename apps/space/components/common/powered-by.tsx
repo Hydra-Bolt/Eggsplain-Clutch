@@ -6,7 +6,7 @@
 
 import { WEBSITE_URL } from "@plane/constants";
 // assets
-import { PlaneLogo } from "@plane/blocks/icons";
+import { ClutchLogo } from "@plane/blocks/icons";
 
 type TPoweredBy = {
   disabled?: boolean;
@@ -25,9 +25,9 @@ export function PoweredBy(props: TPoweredBy) {
       target="_blank"
       rel="noreferrer noopener"
     >
-      <PlaneLogo className="h-3 w-auto text-primary" />
+      <ClutchLogo className="h-3 w-auto text-primary" />
       <div className="text-11">
-        Powered by <span className="font-semibold">Plane Publish</span>
+        Powered by <span className="font-semibold">Clutch Publish</span>
       </div>
     </a>
   );

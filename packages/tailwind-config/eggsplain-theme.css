@@ -1,0 +1,42 @@
+/*
+ * Eggsplain Clutch brand overrides (see /DESIGN.md in the Eggsplain workspace).
+ * Replaces propel's blue brand scale with Eggsplain ignition orange (#FF6B00)
+ * and tints neutrals toward the eggshell (#FFFBF2) / deep slate (#1B1D24) palette.
+ * Imported after @makeplane/propel/styles so it wins on equal specificity.
+ */
+@layer base {
+  :root,
+  :host {
+    --brand-50: oklch(0.9915 0.006 75);
+    --brand-100: oklch(0.9820 0.014 70);
+    --brand-200: oklch(0.9650 0.032 65);
+    --brand-300: oklch(0.9350 0.062 62);
+    --brand-400: oklch(0.8900 0.100 58);
+    --brand-500: oklch(0.8300 0.140 55);
+    --brand-600: oklch(0.7700 0.175 52);
+    --brand-700: oklch(0.7300 0.195 50);
+    --brand-800: oklch(0.6500 0.200 46);
+    --brand-900: oklch(0.5600 0.175 44);
+    --brand-1000: oklch(0.4500 0.135 42);
+    --brand-1100: oklch(0.3400 0.095 40);
+    --brand-1200: oklch(0.2600 0.060 40);
+    --brand-default: oklch(0.6900 0.2030 48); /* ~#FF6B00 */
+
+    @variant dark {
+      --brand-50: oklch(0.2000 0.030 45);
+      --brand-100: oklch(0.2400 0.045 45);
+      --brand-200: oklch(0.2900 0.065 45);
+      --brand-300: oklch(0.3500 0.085 46);
+      --brand-400: oklch(0.4300 0.115 47);
+      --brand-500: oklch(0.5100 0.145 48);
+      --brand-600: oklch(0.6000 0.175 49);
+      --brand-700: oklch(0.7000 0.200 50);
+      --brand-800: oklch(0.7700 0.160 55);
+      --brand-900: oklch(0.8600 0.100 60);
+      --brand-1000: oklch(0.9200 0.060 65);
+      --brand-1100: oklch(0.9600 0.030 70);
+      --brand-1200: oklch(0.9850 0.012 75);
+      --brand-default: oklch(0.7200 0.1950 50);
+    }
+  }
+}

@@ -27,7 +27,7 @@ const V2_PAGE_WITHOUT_TITLE =
 const redisState = vi.hoisted(() => ({ client: null as RedisClient | null }));
 vi.mock("@/redis", () => ({ redisManager: { getClient: () => redisState.client } }));
 
-// Only the API boundary is replaced; Plane's codecs, persistence and title hooks run unchanged.
+// Only the API boundary is replaced; Clutch's codecs, persistence and title hooks run unchanged.
 const api = vi.hoisted(() => ({
   saved: new Map<string, Uint8Array>(),
   html: new Map<string, string>(),
@@ -52,7 +52,7 @@ vi.mock("@/services/page/handler", () => ({
 
 const REDIS_URL = process.env.TEST_REDIS_URL;
 
-describe.skipIf(!REDIS_URL)("Hocuspocus v3 with Plane's Redis extension and v2 documents", () => {
+describe.skipIf(!REDIS_URL)("Hocuspocus v3 with Clutch's Redis extension and v2 documents", () => {
   const servers: Hocuspocus[] = [];
   const sockets: WebSocketServer[] = [];
   const providers: HocuspocusProvider[] = [];
